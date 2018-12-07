@@ -1,9 +1,62 @@
 {
-  "name": "react-native-notifications",
-  "version": "1.1.21",
+  "_args": [
+    [
+      "react-native-notifications@1.1.20",
+      "/Users/eugene/Work/SWAN/Projects/sonicxpress/mobile-app"
+    ]
+  ],
+  "_from": "react-native-notifications@1.1.20",
+  "_id": "react-native-notifications@1.1.20",
+  "_inBundle": false,
+  "_integrity": "sha512-55DvP6/W13Hum7fZE7U4o3Ge07zA3FxqOFtLBLMYvMHzGhEe7czDe7/9zd8aoo9lJPI1TWVWdwhXhKrT4GalYA==",
+  "_location": "/react-native-notifications",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-native-notifications@1.1.20",
+    "name": "react-native-notifications",
+    "escapedName": "react-native-notifications",
+    "rawSpec": "1.1.20",
+    "saveSpec": null,
+    "fetchSpec": "1.1.20"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-notifications/-/react-native-notifications-1.1.20.tgz",
+  "_spec": "1.1.20",
+  "_where": "/Users/eugene/Work/SWAN/Projects/sonicxpress/mobile-app",
+  "author": {
+    "name": "Lidan Hifi",
+    "email": "lidan.hifi@gmail.com"
+  },
+  "babel": {
+    "presets": [
+      "react-native"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/wix/react-native-notifications/issues"
+  },
+  "dependencies": {
+    "core-js": "^1.0.0",
+    "uuid": "^2.0.3"
+  },
   "description": "Advanced Push Notifications (Silent, interactive notifications) for iOS & Android",
-  "author": "Lidan Hifi <lidan.hifi@gmail.com>",
-  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^6.0.2",
+    "babel-preset-react-native": "^1.9.0",
+    "babel-register": "^6.7.2",
+    "chai": "^3.5.0",
+    "chokidar-cli": "^1.2.0",
+    "eslint": "^2.12.0",
+    "mocha": "^2.5.3",
+    "proxyquire": "^1.7.4",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  },
+  "homepage": "https://github.com/wix/react-native-notifications",
   "keywords": [
     "react-component",
     "react-native",
@@ -19,46 +72,24 @@
     "actionable-notifications",
     "interactive-notifications"
   ],
+  "license": "MIT",
+  "name": "react-native-notifications",
   "nativePackage": true,
-  "dependencies": {
-    "core-js": "^1.0.0",
-    "uuid": "^2.0.3"
-  },
   "peerDependencies": {
     "react": ">=0.14.5",
     "react-native": ">=0.25.1"
-  },
-  "devDependencies": {
-    "babel-eslint": "9.0.0",
-    "babel-preset-react-native": "^1.9.0",
-    "babel-register": "^6.7.2",
-    "chai": "^3.5.0",
-    "chokidar-cli": "^1.2.0",
-    "eslint": "5.1.x",
-    "mocha": "^2.5.3",
-    "proxyquire": "^1.7.4",
-    "sinon": "^1.17.3",
-    "sinon-chai": "^2.8.0"
-  },
-  "scripts": {
-    "pretest": "./node_modules/.bin/eslint *.js test",
-    "test": "./node_modules/.bin/mocha --compilers js:babel-register --reporter spec \"test/*.spec.js\"",
-    "start": "npm run test --silent; ./node_modules/.bin/chokidar \"test/*.js\" \"*.js\" -c 'npm run test --silent' --silent"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wix/react-native-notifications.git"
+    "url": "git+https://github.com/wix/react-native-notifications.git"
   },
-  "homepage": "https://github.com/wix/react-native-notifications",
-  "bugs": {
-    "url": "https://github.com/wix/react-native-notifications/issues"
+  "scripts": {
+    "pretest": "eslint *.js test",
+    "start": "npm run test --silent; ./node_modules/.bin/chokidar \"test/*.js\" \"*.js\" -c 'npm run test --silent' --silent",
+    "test": "mocha --compilers js:babel-register --reporter spec \"test/*.spec.js\""
   },
-  "babel": {
-    "presets": [
-      "react-native"
-    ]
-  }
+  "version": "1.1.20"
 }

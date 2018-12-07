@@ -280,7 +280,7 @@ RCT_EXPORT_MODULE()
         if (notificationId) {
             [self clearNotificationFromNotificationsCenter:notificationId];
         }
-        [self didNotificationOpen:notification.userInfo];
+       [self didNotificationOpen:notification.userInfo];
     }
 }
 
