@@ -10,10 +10,9 @@
 + (void)didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings;
 + (void)didUpdatePushCredentials:(PKPushCredentials *)credentials forType:(NSString *)type;
 
++ (void)didNotificationOpen:(NSDictionary *)notification;
 + (void)didReceiveRemoteNotification:(NSDictionary *)notification;
 + (void)didReceiveLocalNotification:(UILocalNotification *)notification;
-
-+ (void) didNotificationOpen:(UILocalNotification *) notification;
 
 + (void)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)())completionHandler;
 + (void)handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)())completionHandler;

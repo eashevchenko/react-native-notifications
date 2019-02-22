@@ -280,7 +280,7 @@ RCT_EXPORT_MODULE()
         if (notificationId) {
             [self clearNotificationFromNotificationsCenter:notificationId];
         }
-       [self didNotificationOpen:notification.userInfo];
+        [self didNotificationOpen:notification.userInfo];
     }
 }
 
@@ -576,7 +576,7 @@ RCT_EXPORT_METHOD(consumeBackgroundQueue)
 
     // Push background notifications to JS
     [[RNNotificationsBridgeQueue sharedInstance] consumeNotificationsQueue:^(NSDictionary* notification) {
-        [RNNotifications didReceiveRemoteNotification:notification];
+        [RNNotifications didReceiveNotificationOnBackgroundState:notification];
     }];
 
     // Push opened local notifications
